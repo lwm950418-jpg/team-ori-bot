@@ -1,6 +1,12 @@
 const { Client, GatewayIntentBits, REST, Routes, SlashCommandBuilder, AttachmentBuilder, EmbedBuilder } = require('discord.js');
 const express = require('express');
 const Database = require('better-sqlite3');
+const path = require('path');
+
+// Bundle a Korean-capable font with the bot so Render can render Hangul correctly.
+process.env.FONTCONFIG_PATH = __dirname;
+process.env.FONTCONFIG_FILE = path.join(__dirname, 'fonts.conf');
+
 const sharp = require('sharp');
 const fs = require('fs');
 
