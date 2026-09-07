@@ -94,7 +94,7 @@ function esc(value) {
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;');
-
+}
 
 function icon(kind, x, y) {
   const common = `stroke="#ff541f" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"`;
